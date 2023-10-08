@@ -35,10 +35,8 @@ def initiate(topics):
     all_top_articles_by_topics['title'].append("".join(top_related_articles['title']))
     all_top_articles_by_topics['abstract'].append("".join(top_related_articles['abstract']))
 
-  return_dict = {
-      'top_related_articles': all_top_articles_by_topics
-  }
-  return return_dict
+
+  return all_top_articles_by_topics
 
 # TESTING
 # topics = ["banking and climate change", 'Logistics Management and Climate Change']
